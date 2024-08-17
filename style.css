@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #1E1E1E;
+}
+
+/* Cabeçalho e Navegação */
+header {
+  background: #242424;
+  padding: 34px 184px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-left: 24px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-size: 16px;
+  
+}
+
+.nav-menu a:target , .nav-menu a:hover {
+  font-weight: 700;
+}
+
+.nav-menu a:visited, .nav-menu a:active {
+  color: #FFF;
+}
+
+/* Seção "Bem-vindo(a)" */
+#bem-vindo {
+  background-image: url(./assets/bemvindo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #242424; /* Cor de fundo para o caso de a imagem não carregar */
+
+  height: 600px
+}
+
+.bem-vindo-container {
+  padding: 198px 380px 198px 732px;
+}
+
+#bem-vindo h1 {
+  color: #FFAA06;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+}
+
+#bem-vindo p {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 12px;
+}
+
+
+
+
+
