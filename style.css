@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #1E1E1E;
+  color: #8C8C8C;
 }
 
 /* Cabeçalho e Navegação */
@@ -37,7 +37,6 @@ header {
 .nav-menu a {
   text-decoration: none;
   font-size: 16px;
-  
 }
 
 .nav-menu a:target , .nav-menu a:hover {
@@ -54,7 +53,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #242424; /* Cor de fundo para o caso de a imagem não carregar */
-
   height: 600px
 }
 
@@ -74,6 +72,77 @@ header {
   font-size: 16px;
   line-height: 19px;
   margin-top: 12px;
+}
+
+/* Seção "Cafés" */
+#linha-especial {
+  padding: 60px 173px 60px 195px;
+  max-width: 100%;
+}
+
+#linha-gourmet {
+  padding: 0px 173px 150px 195px;
+  max-width: 100%;
+}
+
+#linha-especial h2, #linha-gourmet h2 {
+  color: #616161;
+  font-size: 24px;
+  font-weight: 400;
+  font-weight: 700;
+  border-bottom: 1px solid #E9E9E9;
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+}
+
+#linha-especial h2 span, #linha-gourmet h2 span {
+  font-weight: 400;
+}
+
+.cafes-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cartões "quebrem" para a próxima linha */
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cafe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: left;
+}
+
+.cafe-card {
+  flex: 1 1 calc(33.333% - 40px); /* Ajuste a largura dos cartões para caber na tela */
+}
+
+.cafe-card img {
+  margin-bottom: 32px;
+}
+
+.cafe-card h3 {
+  margin-bottom: 16px;
+}
+.cafe-card h3, .cafe-card .preco {
+  color: #2C2C2C;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cafe-card .preco {
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+.cafe-card .descricao {
+  font-size: 16px;
+  line-height: 22.4px;
+  margin-bottom: 16px;
 }
 
 
