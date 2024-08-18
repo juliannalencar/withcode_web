@@ -149,8 +149,7 @@ header {
 #vip {
   display: flex;
   justify-content: space-between;
-
-  margin-bottom: 80px;
+  margin-bottom: 68px;
 }
 
 .vip-info {
@@ -232,7 +231,6 @@ input::placeholder {
   flex: 1 1 60%; /* E-mail ocupa 58% do espaço */
 }
 
-
 .checkbox-group {
   position: relative;
 }
@@ -292,4 +290,37 @@ input::placeholder {
 
 .vip-form button:hover {
   background-color: #555;
+}
+
+/* Footer */
+#site-footer {
+  padding: 0 184px;
+  margin-bottom: 80px;
+  font-size: 16px;
+  color: #757575;
+}
+
+.footer-container {
+  border-top: 1px solid #D9D9D9;
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-social a, .footer-social a:visited, .footer-social a:active {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer-social a img {
+  height: 22px;
+  margin-right: 18px;
 }
