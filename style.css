@@ -112,7 +112,7 @@ header {
   align-items: flex-start;
   background-color: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.10);
   padding: 40px;
   text-align: left;
 }
@@ -145,7 +145,151 @@ header {
   margin-bottom: 16px;
 }
 
+/* Seção "Seja WCC VIP" */
+#vip {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 80px;
+}
+
+.vip-info {
+  flex-basis: 50%;
+  padding: 166px 130px 165px 195px;
+  background-color: #2C2C2C;
+}
+
+.vip-info h2 {
+  color: #FFAA06;
+  font-size: 24px;
+  line-height: 28px;
+  border-bottom: 1px solid #FFAA06;
+  padding-bottom: 16px;
+  margin-bottom: 37px;
+}
+
+.vip-info p {
+  color: #FFF;
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.vip-form {
+  flex-basis: 50%;
+}
+
+.form-container {
+  padding: 33px 48px;
+  border-radius: 16px;
+  color: #2C2C2C;
+  margin-right: 173px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.10); /* Sombra ao redor do formulário */
+}
+
+.form-container h2 {
+  color: #2C2C2C;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 37px;
+}
+
+.form-group {
+  margin-bottom: 48.5px;
+}
+
+.form-group label {
+  color: #2C2C2C;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input::placeholder {
+  color: #808080; /* Cor personalizada para o placeholder */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #2C2C2C;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+.form-group.inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group.inline .form-group:first-child {
+  flex: 1 1 30%; /* Celular ocupa 40% do espaço */
+  margin-right: 24px; /* Adiciona espaço entre Celular e E-mail */
+}
+
+.form-group.inline .form-group:last-child {
+  flex: 1 1 60%; /* E-mail ocupa 58% do espaço */
+}
 
 
+.checkbox-group {
+  position: relative;
+}
 
+.checkbox-group label {
+  display:flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 22.4px;
+}
 
+.checkbox-group input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  
+}
+
+.checkbox-group label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+  border: 1px solid #2C2C2C;
+  border-radius: 4px;
+}
+
+.checkbox-group input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-group input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.checkbox-group a {
+  color: inherit; /* Herda a cor do texto ao redor */
+  font-size: 18px;
+}
+
+.vip-form button {
+  width: 100%;
+  padding: 16px 140px;
+  background-color: #2C2C2C;
+  color: #FFF;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vip-form button:hover {
+  background-color: #555;
+}
